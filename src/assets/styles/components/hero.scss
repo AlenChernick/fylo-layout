@@ -1,0 +1,42 @@
+.hero {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      display: block;
+      width: em(720px);
+      height: em(534px);
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: $clr7;
+      font-family: Raleway-Regular;
+      font-size: em(40px);
+      margin: 0;
+    }
+
+    p {
+      text-align: center;
+      font-family: OpenSans-Regular;
+      font-size: em(20px);
+      color: $clr7;
+    }
+    button {
+      width: em(280px);
+      height: em(56px);
+      border-radius: em(28px);
+      background-color: $clr6;
+      margin: 0 auto;
+      color: $clr7;
+      font-family: Raleway-Regular;
+      font-weight: 600;
+      font-size: em(16px);
+      border: none;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.357);
+      cursor: pointer;
+    }
+  }
+}

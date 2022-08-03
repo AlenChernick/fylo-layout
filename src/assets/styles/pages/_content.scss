@@ -1,0 +1,193 @@
+.content {
+  margin-top: em(158px);
+  .content-container {
+    .content-top {
+      display: grid;
+      grid-template-columns: repeat(2, em(384px));
+      grid-template-rows: 1fr 1fr;
+      gap: 80px;
+      justify-content: center;
+
+      @include for-mobile-layout {
+        display: flex;
+        flex-direction: column;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      h5 {
+        font-size: em(20px);
+        font-family: Raleway-Regular;
+        color: $clr7;
+        text-align: center;
+        margin: em(16px) auto em(5px) auto;
+      }
+
+      p {
+        color: $clr7;
+        text-align: center;
+        font-size: em(14px);
+        font-family: OpenSans-Regular;
+        margin: 0;
+      }
+
+      .first-info {
+        grid-column: 1;
+      }
+      .second-info {
+        grid-column: 2;
+      }
+      .third-info {
+        grid-column: 1;
+        grid-row: 2;
+      }
+    }
+  }
+  .content-center {
+    display: flex;
+    justify-content: center;
+    margin-block-start: em(138.4px);
+    @include for-mobile-layout {
+      flex-direction: column;
+    }
+
+    .content-center-img {
+      width: em(614.76px);
+      height: em(463.63px);
+
+      @include for-mobile-layout {
+        margin: 0 auto;
+      }
+    }
+
+    .content-center-info {
+      margin-inline-start: em(57.2px);
+      h3 {
+        font-size: em(40px);
+        font-family: Raleway-Regular;
+        color: $clr7;
+        margin: em(35px) auto em(5px) auto;
+        @include for-mobile-layout {
+          font-size: em(20px);
+          text-align: center;
+          br {
+            content: '';
+          }
+        }
+      }
+
+      p {
+        font-family: OpenSans-Regular;
+        color: $clr7;
+        font-size: em(16px);
+      }
+
+      a {
+        text-decoration: none;
+        color: $clr5;
+        font-family: OpenSans-Regular;
+        font-size: em(16px);
+      }
+
+      img {
+        float: right;
+        margin-inline-end: em(622px);
+        margin-block-start: em(6px);
+      }
+
+      .sepertaor {
+        width: em(170px);
+        height: em(1px);
+        background-color: $clr5;
+      }
+
+      .first-p {
+        margin-bottom: em(19px);
+      }
+
+      @include for-mobile-layout {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .content-bottom {
+    margin-block-start: em(120px);
+    display: grid;
+    grid-template-columns: repeat(3, em(360px));
+    gap: em(40px);
+    justify-content: center;
+    border-radius: em(3.93px);
+
+    @include for-mobile-layout {
+      grid-template-rows: repeat(3, em(180px));
+    }
+
+    .user-review {
+      display: flex;
+      margin-inline-start: em(26px);
+      .user-review-info {
+        display: flex;
+        flex-direction: column;
+        margin-inline-start: em(8px);
+        margin-bottom: em(25px);
+
+        @include for-mobile-layout {
+          margin-bottom: 0;
+        }
+        .user-name {
+          font-family: OpenSans-Regular;
+          font-size: em(10px);
+
+          color: $clr7;
+        }
+        .user-profession {
+          font-family: OpenSans-Regular;
+          font-size: em(8px);
+          color: $clr7;
+        }
+      }
+    }
+
+    p {
+      text-align: left;
+      font-family: OpenSans-Regular;
+      font-size: em(14px);
+      margin: em(25px);
+      color: $clr7;
+    }
+
+    img {
+      width: em(24px);
+      height: em(24px);
+      border-radius: 50%;
+    }
+
+    .first-card {
+      grid-column: 1;
+      background-color: $clr4;
+      @include for-mobile-layout {
+        grid-row: 1;
+        grid-column: 2;
+      }
+    }
+    .second-card {
+      grid-column: 2;
+      background-color: $clr4;
+      @include for-mobile-layout {
+        grid-row: 2;
+        grid-column: 2;
+      }
+    }
+    .third-card {
+      grid-column: 3;
+      background-color: $clr4;
+      @include for-mobile-layout {
+        grid-row: 3;
+        grid-column: 2;
+      }
+    }
+  }
+}
